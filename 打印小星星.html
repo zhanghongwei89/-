@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var str = ''; //空字符
+        //下面的运算方式是先外一次,在里三次,出去后外第二次,里在三次再出去外第三次,里三次
+        for (var j = 1; j <= 3; j++) {
+            for (var i = 1; i <= 3; i++) {
+                str = str + '★ '
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+
+        var str = '';
+        for (var k = 1; k <= 9; k++) {
+            for (var a = 1; a <= 10 - k; a++) {
+                str = str + '★ '
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+
+        var str = '';
+        for (var k = 1; k <= 9; k++) {
+            for (var a = k; a <= 9; a++) {
+                str = str + '☆ '
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var i = prompt('请输入您要进行的操作:\n 1.取钱\n 2.存钱 \n 3.查看余额\n 4.弹卡');
+        var q = 100;
+        switch (i) {
+            case '1':
+                var p = prompt('取出金额');
+                p = q - parseFloat(p);
+                alert('余额为' + p);
+                break;
+            case '2':
+                var c = prompt('存取金额');
+                c = q + parseFloat(c);
+                alert('余额为' + c);
+                break;
+            case '3':
+                var k = alert('余额为' + q);
+                k = q;
+                break;
+            case '4':
+                var t = alert('请取卡');
+                break;
+        }
+        // 偶数的合
+        var i = 1;
+        var k = 0;
+        while (i <= 100) {
+            if (i % 2 == 0) {
+                k = i + k;
+            }
+            i++
+        }
+        console.log(k);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
